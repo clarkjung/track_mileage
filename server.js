@@ -213,6 +213,6 @@ app.get('/save/:query', cors(), function (req, res) {
   })
 });
 
-app.listen("3300", function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log('Server up: http://localhost:3300');
 });
