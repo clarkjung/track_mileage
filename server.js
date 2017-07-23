@@ -213,6 +213,6 @@ app.get('/save/:query', cors(), function (req, res) {
   })
 });
 
-app.listen(process.env.PORT || 3000, function () {
+app.listen(process.env.PORT || 3300, function () {
   console.log('Server up:');
 });
