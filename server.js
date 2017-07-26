@@ -65,7 +65,7 @@ Model.findOne({ 'date': initialDate }, function (err, data) {
 
 //Connecting to the Mongodb instance.
 //Make sure your mongodb daemon mongod is running on port 27017 on localhost
-MongoClient.connect(process.env.MONGOLAB_URI, function (err, db) {
+MongoClient.connect(process.env.MONGODB_URI, function (err, db) {
   if (err) throw err;
   dbObject = db;
 });
