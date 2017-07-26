@@ -27,7 +27,7 @@ var schemaName = new Schema({
   });
 
 var Model = mongoose.model('Model', schemaName);
-mongoose.connect(process.env.MONGOLAB_URI);
+mongoose.connect(process.env.MONGODB_URI);
 
 var initialDate = new Date();
 initialDate.setFullYear(2017);
