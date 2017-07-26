@@ -3,7 +3,7 @@ var chartData;
 $(function(){
   $.ajax({
 
-    url: 'http://trackmileage.herokuapp.com/mileage',
+    url: '/mileage',
     type: 'GET',
     success : function(data) {
       chartData = data;
