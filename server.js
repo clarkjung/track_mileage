@@ -187,7 +187,7 @@ app.get("/", function (req, res) {
 app.get('/save/:query', cors(), function (req, res) {
 
   var date = new Date();
-  date.setDate(date.getDate() + 3);
+  date.setDate(date.getDate());
   var mileage = parseInt(req.query.mileage);
 
   Model.findOne({ 'date': date }, function (err, data) {
